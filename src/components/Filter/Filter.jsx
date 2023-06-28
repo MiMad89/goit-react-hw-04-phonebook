@@ -1,17 +1,15 @@
-import { Component } from 'react';
+import React from 'react';
 
-export class Filter extends Component {
-  handleFilter = e => {
+export const Filter = ({ onChange }) => {
+  const handleFilter = e => {
     const { value } = e.target;
-    this.props.onChange(value);
+    onChange(value);
   };
 
-  render() {
-    return (
-      <div>
-        <h3>Find contacts by name</h3>
-        <input onChange={this.handleFilter} placeholder="Enter name" />
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <h3>Find contacts by name</h3>
+      <input onChange={handleFilter} placeholder="Enter name" />
+    </div>
+  );
+};
