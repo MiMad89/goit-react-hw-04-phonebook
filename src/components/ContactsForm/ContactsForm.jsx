@@ -58,5 +58,3 @@ export const ContactsForm = ({ onSubmit }) => {
     </form>
   );
 };
-
-export default ContactsForm;

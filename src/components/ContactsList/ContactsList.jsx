@@ -30,4 +30,3 @@ export const ContactsList = ({ contacts, onClick }) => {
   );
 };
 
-export default ContactsList;
